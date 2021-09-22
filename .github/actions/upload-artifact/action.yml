@@ -16,8 +16,8 @@ runs:
       shell: bash
       run: |
         echo "Temporary disabled"
-#    - uses: actions/upload-artifact@v2
-#      with:
-#        name: ${{ github.job }}
-#        path: bin/*
-#        retention-days: 14
+    - uses: actions/upload-artifact@v2
+      with:
+        name: ${{ github.job }}
+        path: bin/*
+        retention-days: 1
